@@ -1,0 +1,102 @@
+.logo {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 100px;
+}
+
+body{
+    background: linear-gradient(rgb(220, 234, 220),rgb(0, 0, 0));
+    background-size: cover;
+    height: 100vh;
+
+}
+/* The linear gradient property in CSS is used to create a smooth transition between two or more colors in a straight line. It allows you to apply a gradient effect to background images, borders, or text. */
+
+.cont {
+  max-width: 900px;
+  border: 4px solid orange;
+  border-radius: 20px;
+  margin: auto;
+  height: 60vh;
+  padding: 20px;
+  overflow-y: auto;
+  /* The overflow property in CSS is used to control the behavior of content that overflows the box or container in which it is placed. It specifies how the content should behave when it exceeds the dimensions of its container. */
+  margin-bottom: 20px;
+}
+
+.message {
+  width: 25%;
+  background-color: lime;
+  padding: 14px;
+  margin: 10px 3px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+.left {
+  float: left;
+  clear: both;
+  /* In CSS, clear: both; is used to ensure that an element is positioned below any floated elements that precede it in the HTML markup. It's often used in the context of clearing floated elements inside a container to prevent layout issues caused by floating elements. */
+}
+
+#sendcontainer{
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#messageinp{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+.btn{
+    width: 12%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .message {
+    width: 50%; /* Adjust the width for smaller screens */
+    margin: 10px -10px;
+  }
+
+  #messageinp {
+    width: 40; /* Adjust the width of the input field for smaller screens */
+  }
+
+  .btn {
+    width: 25%; /* Adjust the width of the button for smaller screens */
+  }
+}
+
+.time{
+  font-weight: bold;
+   float: right;
+    margin-right: 5px; 
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATIFY a Realtime Chat APP</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <!-- In summary, the script tag you provided is deferring the execution of the socket.io.js script until after the HTML document has been parsed. The script is loaded from the specified URL, w -->
+    <script defer src="JS/client.js"></script>
+
+<!-- In HTML, the defer attribute is used with the <script> element to indicate that the script should be executed after the HTML document has been completely parsed.  -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav>
+        <img src="ab.png" alt="CHATIFY.com" class="logo">
+        <h1>Welcome to Chatify.com</h1>
+    </nav>
+    <div class="cont">
+        <div id="current-chat-user"></div>
+        <!-- <div class="message right">AKAY: HI KAISE HO?</div>
+        <div class="message left">MODI: HAN BHAI BADIYA HU! TUM BTAO</div> -->
+    </div>
+    <div class="send">
+        <form action="" id="sendcontainer" target="_self">
+            <input type="text" class="messageinp" id="messageinp">
+             <button class="btn" type="submit" >SEND</button>
+        </form>
+    </div>
+</body>
+</html>
